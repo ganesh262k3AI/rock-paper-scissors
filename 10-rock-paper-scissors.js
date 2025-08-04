@@ -98,13 +98,13 @@ let score = JSON.parse (localStorage.getItem('score'))||
     
    
   
-      const randomNumber = Math.random();
+      const randomNumber = Math.floor(Math.random()*3+1);
   
-    if(randomNumber>0 && randomNumber <=1/3){
+    if(randomNumber=1){
         computerMOves = 'rock';
-    }else if(randomNumber>1/3 && randomNumber <=2/3){
+    }else if(randomNumber=2){
       computerMOves = 'paper'
-    }else if(randomNumber>2/3 && randomNumber <=1){
+    }else if(randomNumber=3){
       computerMOves = 'scissors'
     }
    
